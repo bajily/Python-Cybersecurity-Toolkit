@@ -1,0 +1,24 @@
+{
+  "before": {
+    "authentication": {
+      "mfa_required": true
+    },
+    "storage": {
+      "public_access": false
+    },
+    "service": {
+      "password": "synthetic-old"
+    }
+  },
+  "after": {
+    "authentication": {
+      "mfa_required": false
+    },
+    "storage": {
+      "public_access": true
+    },
+    "service": {
+      "password": "synthetic-new"
+    }
+  }
+}
