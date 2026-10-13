@@ -1,0 +1,30 @@
+{
+  "incident": {
+    "id": "SYNTHETIC-INCIDENT-001",
+    "severity": "high"
+  },
+  "steps": [
+    {
+      "id": "open-case",
+      "action": "open_case",
+      "depends_on": [],
+      "requires_approval": false,
+      "parameters": {
+        "queue": "soc"
+      }
+    },
+    {
+      "id": "isolate-host",
+      "action": "isolate_host",
+      "depends_on": [
+        "open-case"
+      ],
+      "requires_approval": true,
+      "parameters": {
+        "host": "synthetic-workstation"
+      }
+    }
+  ],
+  "approvals": [],
+  "previous_execution": []
+}
