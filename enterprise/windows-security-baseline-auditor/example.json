@@ -1,0 +1,17 @@
+{
+  "endpoints": [
+    {
+      "id": "synthetic-win-host",
+      "controls": {
+        "firewall_domain": true,
+        "firewall_private": false,
+        "firewall_public": false,
+        "defender_antivirus": true,
+        "defender_realtime": false,
+        "bitlocker_protected": false,
+        "smb1_disabled": false,
+        "rdp_nla_required": null
+      }
+    }
+  ]
+}
