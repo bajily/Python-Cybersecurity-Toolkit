@@ -1,10 +1,71 @@
-# Python Cybersecurity Toolkit
+# Enterprise Python Cybersecurity Toolkit
+
+A collection of **10 independently runnable defensive security projects** for reviewing Linux and Windows baselines, Docker and Kubernetes configurations, API access logs, audit integrity, configuration drift, phishing evidence, threat intelligence and incident response workflows.
+
+Built for controlled enterprise security evaluation with documented JSON inputs, configurable policy checks, synthetic fixtures, tests, redacted evidence where applicable, and JSON/SARIF/Markdown reports. Python 3.11+; standard library only.
+
+## Security projects in this repository
+
+| Project | Purpose |
+|---|---|
+| [Linux Hardening Auditor](enterprise/linux-hardening-auditor) | Review captured Linux configuration text and permission metadata against a documented baseline. |
+| [Windows Security Baseline Auditor](enterprise/windows-security-baseline-auditor) | Evaluate a normalized endpoint control export and report missing, disabled or unknown protections. |
+| [Container Security Auditor](enterprise/container-security-auditor) | Review Dockerfile text before merging an application container build. |
+| [Kubernetes Manifest Guard](enterprise/kubernetes-manifest-guard) | Review exported Kubernetes JSON resources and explain effective pod/container security-context gaps. |
+| [API Access Log Detector](enterprise/api-access-log-detector) | Triage normalized request logs into explainable client and route activity findings. |
+| [Audit Log Integrity Ledger](enterprise/audit-log-integrity-ledger) | Verify a log export against a protected signing key and an independently stored final-head anchor. |
+| [Security Configuration Drift](enterprise/security-config-drift) | Compare two reviewed configuration snapshots and prioritize changed security-relevant paths. |
+| [Phishing Email Triage](enterprise/phishing-email-triage) | Analyze bounded MIME email content without opening attachments or following links. |
+| [Threat Intelligence Matcher](enterprise/threat-intelligence-matcher) | Match normalized observations against a maintained local indicator dataset. |
+| [Incident Response Orchestrator](enterprise/incident-response-orchestrator) | Validate a declarative incident playbook and generate an auditable local response plan. |
+
+## Run a project
+
+```bash
+git clone https://github.com/bajily/Python-Cybersecurity-Toolkit.git
+cd Python-Cybersecurity-Toolkit/enterprise/kubernetes-manifest-guard
+python security_tool.py --demo --now 2026-10-13T12:00:00Z
+python -m unittest discover -v
+```
+
+Each project directory contains its own engine, test suite, synthetic input, README and MIT license. Exit 1 means a finding met the configured threshold. See that project's README for its input contract and evaluation limits.
+
+GitHub Actions uses a project/Python matrix to test these ten directories independently on Python 3.11 and 3.14. Earlier learning scripts at repository root are outside this enterprise test matrix.
+
+## Complementary standalone security projects
+
+| Project | Purpose |
+|---|---|
+| [Identity Access Review](https://github.com/bajily/identity-access-review) | Review normalized identity and group exports; explain inherited business and administrative permissions. |
+| [Cloud IAM Policy Auditor](https://github.com/bajily/cloud-iam-policy-auditor) | Statically inspect exported IAM JSON before a reviewer approves access changes. |
+| [Cloud Storage Exposure Audit](https://github.com/bajily/cloud-storage-exposure-audit) | Review a normalized storage inventory and prioritize exposure using data classification. |
+| [Network Segmentation Auditor](https://github.com/bajily/network-segmentation-auditor) | Test a proposed ordered firewall policy against explicit expected traffic decisions. |
+| [TLS Certificate Auditor](https://github.com/bajily/tls-certificate-auditor) | Review exported certificate inventory or connect to explicitly listed authorized TLS endpoints. |
+| [Software Supply Chain Auditor](https://github.com/bajily/software-supply-chain-auditor) | Trace vulnerable dependencies from an application through a CycloneDX dependency graph. |
+| [Secrets Exposure Scanner](https://github.com/bajily/secrets-exposure-scanner) | Detect likely credential material in a repository without printing matched secret values. |
+| [Vulnerability Prioritizer](https://github.com/bajily/vulnerability-prioritizer) | Produce a reproducible patch queue from normalized vulnerability and asset exports. |
+| [Ransomware Canary Detector](https://github.com/bajily/ransomware-canary-detector) | Correlate exported filesystem events and canary touches into host-level triage findings. |
+| [Backup Restore Verifier](https://github.com/bajily/backup-restore-verifier) | Verify an exported backup manifest against a local snapshot before a recovery exercise. |
+
+## Evaluation scope
+
+These initial implementations support security review and triage. Validate exports, policies and false positives in your own environment before relying on them operationally. They do not provide universal protection, full provider-policy simulation or compliance certification.
+
+## بالعربية
+
+مجموعة تضم عشرة مشاريع دفاعية مستقلة داخل هذا المستودع، وروابط لعشرة مشاريع مكمّلة في مستودعات منفصلة. تغطي فحص الأنظمة والحاويات والسجلات والإعدادات والتصيّد ومؤشرات التهديد والتخطيط للاستجابة، مع توثيق واختبارات وأمثلة تشغيل.
+
+## Earlier learning scripts
+
+The following root-level scripts are older educational experiments; their documented limitations remain relevant.
+
+## Python Cybersecurity Toolkit
 
 A collection of small Python learning scripts covering DNS lookups, network discovery, hashing, and web-security lab exercises.
 
 This repository contains early experiments. The scripts have different dependencies and maturity levels; the table below distinguishes them so users can choose an appropriate starting point.
 
-## Script index
+### Script index
 
 | Script | Purpose | Dependencies / status |
 |---|---|---|
@@ -19,7 +80,7 @@ This repository contains early experiments. The scripts have different dependenc
 | `Keylogger.py` | Record and replay local keyboard input | `keyboard`; sensitive lab experiment |
 | `RCE_Exploit.py` | Historical remote-command lab experiment | Incomplete; contains indentation errors and is not runnable |
 
-## Start with DNS resolution
+### Start with DNS resolution
 
 ```bash
 git clone https://github.com/bajily/Python-Cybersecurity-Toolkit.git
@@ -31,19 +92,19 @@ Enter a domain you own or have permission to investigate. The script checks `www
 
 For scripts with external dependencies, create a virtual environment and install only the packages required by the selected script. Network access and operating-system permissions vary by tool.
 
-## Scope and responsible use
+### Scope and responsible use
 
 Use active network and web tests only in systems you own or an explicitly authorized lab. Keep keyboard experiments local and consensual. Do not commit credentials, captured input, real logs, or private target data.
 
 The scripts are educational examples, not production security tools. A reflected payload or error message alone does not prove a vulnerability. Offline defensive projects are available in [SOC Portfolio](https://github.com/bajily/SOC-Portfolio-).
 
-## Development direction
+### Development direction
 
 - Standardize CLI arguments and input validation.
 - Add timeouts and structured results to network tools.
 - Add isolated tests before changing active lab scripts.
 - Prioritize reproducible defensive workflows and clear limitations.
 
-## بالعربية
+### بالعربية
 
 مجموعة تجارب تعليمية في Python للشبكات والأمن السيبراني. يوضح الجدول وظيفة كل ملف ومتطلباته وحالته، مع بداية بسيطة باستخدام DNS وحدود واضحة للاستخدام في المختبرات المصرّح بها.
