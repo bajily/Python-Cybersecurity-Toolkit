@@ -1,0 +1,18 @@
+{
+  "key_env": "__DEMONSTRATION_ONLY__",
+  "initial_head": "0000000000000000000000000000000000000000000000000000000000000000",
+  "expected_head": "a30677032dfdbd3d3375738c206067c3e0808cf187db5ad8591565c6a2ed7632",
+  "records": [
+    {
+      "sequence": 1,
+      "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "timestamp": "2026-10-13T11:00:00Z",
+      "event": {
+        "action": "synthetic-login",
+        "outcome": "altered"
+      },
+      "hash": "a30677032dfdbd3d3375738c206067c3e0808cf187db5ad8591565c6a2ed7632",
+      "hmac": "728e90059b77de387b26730439d4d3bbd7e68f797fea497f01a1c72904fe8c7d"
+    }
+  ]
+}
