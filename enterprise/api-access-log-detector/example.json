@@ -1,0 +1,204 @@
+{
+  "events": [
+    {
+      "id": "synthetic-request-0",
+      "timestamp": "2026-10-13T11:00:00Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-0",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-1",
+      "timestamp": "2026-10-13T11:00:01Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-1",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-2",
+      "timestamp": "2026-10-13T11:00:02Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-2",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-3",
+      "timestamp": "2026-10-13T11:00:03Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-3",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-4",
+      "timestamp": "2026-10-13T11:00:04Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-4",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-5",
+      "timestamp": "2026-10-13T11:00:05Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-5",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-6",
+      "timestamp": "2026-10-13T11:00:06Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-6",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-7",
+      "timestamp": "2026-10-13T11:00:07Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-7",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-8",
+      "timestamp": "2026-10-13T11:00:08Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-8",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-9",
+      "timestamp": "2026-10-13T11:00:09Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-9",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-10",
+      "timestamp": "2026-10-13T11:00:10Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-10",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-11",
+      "timestamp": "2026-10-13T11:00:11Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-11",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-12",
+      "timestamp": "2026-10-13T11:00:12Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-12",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-13",
+      "timestamp": "2026-10-13T11:00:13Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-13",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-14",
+      "timestamp": "2026-10-13T11:00:14Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-14",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-15",
+      "timestamp": "2026-10-13T11:00:15Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-15",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-16",
+      "timestamp": "2026-10-13T11:00:16Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-16",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-17",
+      "timestamp": "2026-10-13T11:00:17Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-17",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-18",
+      "timestamp": "2026-10-13T11:00:18Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-18",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-19",
+      "timestamp": "2026-10-13T11:00:19Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-19",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-20",
+      "timestamp": "2026-10-13T11:00:20Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-20",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-21",
+      "timestamp": "2026-10-13T11:00:21Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-21",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-22",
+      "timestamp": "2026-10-13T11:00:22Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-22",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-23",
+      "timestamp": "2026-10-13T11:00:23Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-23",
+      "response_bytes": 100
+    },
+    {
+      "id": "synthetic-request-24",
+      "timestamp": "2026-10-13T11:00:24Z",
+      "client": "192.0.2.20",
+      "status": 401,
+      "path": "/private/route-24",
+      "response_bytes": 100
+    }
+  ]
+}
