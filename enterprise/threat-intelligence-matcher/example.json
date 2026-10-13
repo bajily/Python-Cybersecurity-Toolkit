@@ -1,0 +1,33 @@
+{
+  "indicators": [
+    {
+      "id": "synthetic-ioc-1",
+      "kind": "cidr",
+      "value": "192.0.2.0/24",
+      "confidence": 90,
+      "expires": "2027-01-01T00:00:00Z",
+      "source": "synthetic-training-feed"
+    },
+    {
+      "id": "synthetic-ioc-2",
+      "kind": "domain",
+      "value": "suspicious.example",
+      "include_subdomains": true,
+      "confidence": 85,
+      "expires": "2027-01-01T00:00:00Z",
+      "source": "synthetic-training-feed"
+    }
+  ],
+  "observations": [
+    {
+      "id": "event-1",
+      "kind": "ip",
+      "value": "192.0.2.20"
+    },
+    {
+      "id": "event-2",
+      "kind": "domain",
+      "value": "api.suspicious.example"
+    }
+  ]
+}
