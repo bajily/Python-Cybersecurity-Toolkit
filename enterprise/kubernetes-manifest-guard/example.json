@@ -1,0 +1,33 @@
+{
+  "resources": [
+    {
+      "apiVersion": "apps/v1",
+      "kind": "Deployment",
+      "metadata": {
+        "name": "synthetic-api",
+        "namespace": "demo"
+      },
+      "spec": {
+        "template": {
+          "spec": {
+            "hostNetwork": true,
+            "containers": [
+              {
+                "name": "api",
+                "image": "synthetic:latest",
+                "securityContext": {
+                  "privileged": true,
+                  "capabilities": {
+                    "add": [
+                      "SYS_ADMIN"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
