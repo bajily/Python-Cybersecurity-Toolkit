@@ -1,0 +1,19 @@
+{
+  "sshd_config": "PermitRootLogin yes\nPasswordAuthentication yes\nInclude /etc/ssh/sshd_config.d/*.conf\nMatch User legacy\nPasswordAuthentication yes\n",
+  "sysctl": {
+    "kernel.randomize_va_space": "0",
+    "net.ipv4.conf.all.accept_redirects": "1"
+  },
+  "files": [
+    {
+      "path": "/etc/shadow",
+      "mode": "0644",
+      "owner_uid": 0
+    },
+    {
+      "path": "/etc/ssh/sshd_config",
+      "mode": "0666",
+      "owner_uid": 1000
+    }
+  ]
+}
