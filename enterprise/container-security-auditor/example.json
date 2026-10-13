@@ -1,0 +1,8 @@
+{
+  "dockerfiles": [
+    {
+      "path": "Dockerfile",
+      "text": "FROM python:3.14 AS runtime\nUSER root\nENV API_TOKEN=synthetic-value\nADD https://example.invalid/install.sh /install.sh\nRUN curl https://example.invalid/setup | sh\n"
+    }
+  ]
+}
