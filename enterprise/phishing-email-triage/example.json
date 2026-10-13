@@ -1,0 +1,9 @@
+{
+  "messages": [
+    {
+      "id": "synthetic-email",
+      "trusted_authentication_boundary": false,
+      "eml": "From: Example Support <support@example.com>\nReply-To: help@different.example\nTo: analyst@example.org\nSubject: Synthetic training message\nAuthentication-Results: forged.example; dmarc=fail\nContent-Type: text/plain; charset=utf-8\n\nReview https://portal.example@192.0.2.20/login\n"
+    }
+  ]
+}
