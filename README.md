@@ -8,16 +8,16 @@ Built for controlled enterprise security evaluation with documented JSON inputs,
 
 | Project | Purpose |
 |---|---|
-| [Linux Hardening Auditor](enterprise/linux-hardening-auditor) | Review captured Linux configuration text and permission metadata against a documented baseline. |
-| [Windows Security Baseline Auditor](enterprise/windows-security-baseline-auditor) | Evaluate a normalized endpoint control export and report missing, disabled or unknown protections. |
-| [Container Security Auditor](enterprise/container-security-auditor) | Review Dockerfile text before merging an application container build. |
-| [Kubernetes Manifest Guard](enterprise/kubernetes-manifest-guard) | Review exported Kubernetes JSON resources and explain effective pod/container security-context gaps. |
-| [API Access Log Detector](enterprise/api-access-log-detector) | Triage normalized request logs into explainable client and route activity findings. |
-| [Audit Log Integrity Ledger](enterprise/audit-log-integrity-ledger) | Verify a log export against a protected signing key and an independently stored final-head anchor. |
-| [Security Configuration Drift](enterprise/security-config-drift) | Compare two reviewed configuration snapshots and prioritize changed security-relevant paths. |
-| [Phishing Email Triage](enterprise/phishing-email-triage) | Analyze bounded MIME email content without opening attachments or following links. |
-| [Threat Intelligence Matcher](enterprise/threat-intelligence-matcher) | Match normalized observations against a maintained local indicator dataset. |
-| [Incident Response Orchestrator](enterprise/incident-response-orchestrator) | Validate a declarative incident playbook and generate an auditable local response plan. |
+| [Linux Hardening Auditor](https://github.com/bajily/Python-Cybersecurity-Toolkit/tree/main/enterprise/linux-hardening-auditor) | Review captured Linux configuration text and permission metadata against a documented baseline. |
+| [Windows Security Baseline Auditor](https://github.com/bajily/Python-Cybersecurity-Toolkit/tree/main/enterprise/windows-security-baseline-auditor) | Evaluate a normalized endpoint control export and report missing, disabled or unknown protections. |
+| [Container Security Auditor](https://github.com/bajily/Python-Cybersecurity-Toolkit/tree/main/enterprise/container-security-auditor) | Review Dockerfile text before merging an application container build. |
+| [Kubernetes Manifest Guard](https://github.com/bajily/Python-Cybersecurity-Toolkit/tree/main/enterprise/kubernetes-manifest-guard) | Review exported Kubernetes JSON resources and explain effective pod/container security-context gaps. |
+| [API Access Log Detector](https://github.com/bajily/Python-Cybersecurity-Toolkit/tree/main/enterprise/api-access-log-detector) | Triage normalized request logs into explainable client and route activity findings. |
+| [Audit Log Integrity Ledger](https://github.com/bajily/Python-Cybersecurity-Toolkit/tree/main/enterprise/audit-log-integrity-ledger) | Verify a log export against a protected signing key and an independently stored final-head anchor. |
+| [Security Configuration Drift](https://github.com/bajily/Python-Cybersecurity-Toolkit/tree/main/enterprise/security-config-drift) | Compare two reviewed configuration snapshots and prioritize changed security-relevant paths. |
+| [Phishing Email Triage](https://github.com/bajily/Python-Cybersecurity-Toolkit/tree/main/enterprise/phishing-email-triage) | Analyze bounded MIME email content without opening attachments or following links. |
+| [Threat Intelligence Matcher](https://github.com/bajily/Python-Cybersecurity-Toolkit/tree/main/enterprise/threat-intelligence-matcher) | Match normalized observations against a maintained local indicator dataset. |
+| [Incident Response Orchestrator](https://github.com/bajily/Python-Cybersecurity-Toolkit/tree/main/enterprise/incident-response-orchestrator) | Validate a declarative incident playbook and generate an auditable local response plan. |
 
 ## Run a project
 
