@@ -1,8 +1,10 @@
-# Enterprise Python Cybersecurity Toolkit
+# Python Cybersecurity Toolkit · Defensive Security Automation
 
 A collection of **10 independently runnable defensive security projects** for reviewing Linux and Windows baselines, Docker and Kubernetes configurations, API access logs, audit integrity, configuration drift, phishing evidence, threat intelligence and incident response workflows.
 
 Built for controlled enterprise security evaluation with documented JSON inputs, configurable policy checks, synthetic fixtures, tests, redacted evidence where applicable, and JSON/SARIF/Markdown reports. Python 3.11+; standard library only.
+
+[Defensive security projects](#security-projects-in-this-repository) · [Python quickstart](#run-a-python-security-audit) · [Cloud and IAM tools](#complementary-standalone-security-projects) · [Evaluation limits](#evaluation-scope) · [العربية](#بالعربية)
 
 ## Security projects in this repository
 
@@ -19,7 +21,9 @@ Built for controlled enterprise security evaluation with documented JSON inputs,
 | [Threat Intelligence Matcher](https://github.com/bajily/Python-Cybersecurity-Toolkit/tree/main/enterprise/threat-intelligence-matcher) | Match normalized observations against a maintained local indicator dataset. |
 | [Incident Response Orchestrator](https://github.com/bajily/Python-Cybersecurity-Toolkit/tree/main/enterprise/incident-response-orchestrator) | Validate a declarative incident playbook and generate an auditable local response plan. |
 
-## Run a project
+<a name="run-a-project"></a>
+
+## Run a Python security audit
 
 ```bash
 git clone https://github.com/bajily/Python-Cybersecurity-Toolkit.git
@@ -46,6 +50,12 @@ GitHub Actions uses a project/Python matrix to test these ten directories indepe
 | [Vulnerability Prioritizer](https://github.com/bajily/vulnerability-prioritizer) | Produce a reproducible patch queue from normalized vulnerability and asset exports. |
 | [Ransomware Canary Detector](https://github.com/bajily/ransomware-canary-detector) | Correlate exported filesystem events and canary touches into host-level triage findings. |
 | [Backup Restore Verifier](https://github.com/bajily/backup-restore-verifier) | Verify an exported backup manifest against a local snapshot before a recovery exercise. |
+
+## Authorized penetration-testing tools
+
+For scoped live web, API, TCP, TLS, SSH, DNS, OpenID Connect and JWT assessment tasks, see the [Enterprise Pentest Suite — 10 Python assessment programs](https://github.com/bajily/enterprise-pentest-suite). Browse the [complete cybersecurity project directory](https://github.com/bajily#enterprise-security-project-directory) for related tools.
+
+Optional [sponsorship of Anas Elgaili's open-source work](https://github.com/sponsors/bajily) helps improve documentation, examples, tests and bug fixes.
 
 ## Evaluation scope
 
